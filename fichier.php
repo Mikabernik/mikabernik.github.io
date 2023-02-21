@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $array["sujetErr"] = "sujet svp !";
         $array["isSuccess"]= false;
 };
-    if($isSucces){
+    if($isSuccess){
         mail($email,$array["sujet"],"le message et contenu du mail");
     };
 
