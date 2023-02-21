@@ -6,7 +6,7 @@ $(function(){
 
         $.ajax({
             type:'POST',
-            url : 'fichier.php',
+            url : 'https://github.com/Mikabernik/mikabernik.github.io/blob/main/fichier.php',
             data : postData,
             dataType : 'json',
             success: function(result){
