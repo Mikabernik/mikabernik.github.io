@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $array["isSuccess"]= false;
 };
     if($isSucces){
-        mail($email,"$array["sujet"]","le message et contenu du mail");
+        mail($email,$array["sujet"],"le message et contenu du mail");
     };
 
     echo json_encode($array);
