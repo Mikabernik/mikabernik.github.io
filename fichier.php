@@ -6,15 +6,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $array["firstname"]= verifyInput ($_POST["firstname"]);
     $array["sujet"]= verifyInput ($_POST["sujet"]);
     $array["isSuccess"] = true;
-    if (empty($firstname)){
+    if (empty( $array["firstname"])){
             $array["firstnameErr"] = "svp votre nom !";
             $array["isSuccess"]= false;
     };
-    if (empty($sujet)){
+    if (empty($array["sujet"])){
         $array["sujetErr"] = "sujet svp !";
         $array["isSuccess"]= false;
 };
-    if($isSuccess){
+    if($array["isSuccess"]){
         mail($email,$array["sujet"],"le message et contenu du mail");
     };
 
