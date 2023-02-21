@@ -6,7 +6,7 @@ $(function(){
 
         $.ajax({
             type:'POST',
-            url : 'php/fichier.php',
+            url : 'fichier.php',
             data : postData,
             dataType : 'json',
             success: function(result){
